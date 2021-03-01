@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economy Class</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBCWxlXDWX6Lpu58J83d7i6w8iwW15s7rQ",
+            authDomain: "bonvoyage-23249.firebaseapp.com",
+            projectId: "bonvoyage-23249",
+            storageBucket: "bonvoyage-23249.appspot.com",
+            messagingSenderId: "1065940595478",
+            appId: "1:1065940595478:web:faf572f2b2236253a79637"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body class="body">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid mx-md-5">
+            <img src="images/logo.png" width="130px" height="100px" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 17px;">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ms-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Flying with Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Business Class</a></li>
+                            <li><a class="dropdown-item" href="#">Economy Class</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Partners</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown ms-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Log in
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Join Now</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn text-light border-warning cstmbtn" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <img src="images/economy.JPG" width="100%" class="img-fluid" alt="...">
+    <br>
+    <br>
+    <div class=" mx-md-5">
+        <p class="lead mx-md-5">
+            You can expect an affordable and comfortable journey when you fly with us in bonvoyage’s Economy Class. The
+            cabin is spacious and bright providing you a relaxing atmosphere throughout your flight.
+        </p>
+    </div>
+
+    <h1 style="text-align: center; font-weight: bold; margin-top: 50px; font-size: 35px;">Relax in comfortable seats
+    </h1>
+    <br><br>
+    <center>
+        <img src="images/lady.jpg" width="70%" class="img-fluid" alt="...">
+    </center>
+    <br>
+    <br>
+    <div class=" mx-md-5">
+        <p class="lead mx-md-5">
+            Our economy class seats are high quality and their ergonomic comfort and innovative design sets them apart.
+            With the seat pocket at the top of the seat, you’ll get more legroom to stretch out and relax. For a small
+            additional cost, you can even choose a seat with extra legroom.
+        </p>
+    </div>
+
+    <h1 style="text-align: center; font-weight: bold; margin-top: 50px; font-size: 35px;">Stay Connected
+    </h1>
+    <br><br>
+    <center>
+        <img src="images/mobile.jpg" width="70%" class="img-fluid" alt="...">
+    </center>
+    <br>
+    <br>
+    <div class=" mx-md-5">
+        <p class="lead mx-md-5">
+            We’re rolling out WiFi across our fleet, so you can now stay in touch with your friends, catch up on your
+            emails or get updates on your favourite sport matches. You can buy a WiFi package on board and access the
+            internet using your phone, tablet or laptop.
+        </p>
+    </div>
+    <br><br>
+    <footer class="bg-dark text-white text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-5">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                    <img src="images/logo.png" width="130px" height="100px"
+                        style="margin-top: -28px; margin-left: 21px;">
+                    <ul class=" mb-0 flist">
+                        <li>Policies</li>
+                        <li>Terms & Conditions</li>
+                        <li>+92313-8554924</li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <ul class=" mb-0 flist">
+                        <li>About BonVoyage</li>
+                        <li>News</li>
+                        <li>Travel shops</li>
+                        <li>Cargo</li>
+                        <li>Ethical Reporting</li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <ul class=" flist">
+                        <li>Careers</li>
+                        <li>FAQs</li>
+                        <li>Procurement</li>
+                        <li>In-flight advertising</li>
+                        <li>Travel agents</li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <ul class=" mb-0 flist">
+                        <li>Lowest fares</li>
+                        <li>Car rental</li>
+                        <li>Hotels</li>
+                        <li>Holidays</li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: goldenrod; color: black;">
+            © 2020 All rights reserved:
+            <a href="index.html" style="color: black;">BonVtravels.online</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <a href="#" class="up"><img src="images/up.svg" alt="" width="40px" height="40px"></a>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

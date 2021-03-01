@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact BonVoyage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBCWxlXDWX6Lpu58J83d7i6w8iwW15s7rQ",
+            authDomain: "bonvoyage-23249.firebaseapp.com",
+            projectId: "bonvoyage-23249",
+            storageBucket: "bonvoyage-23249.appspot.com",
+            messagingSenderId: "1065940595478",
+            appId: "1:1065940595478:web:faf572f2b2236253a79637"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body class="body">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid mx-md-5">
+            <img src="images/logo.png" width="130px" height="100px" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 17px;">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ms-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Flying with Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Business Class</a></li>
+                            <li><a class="dropdown-item" href="economy.html">Economy Class</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Partners</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link active" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown ms-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Log in
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Join Now</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn text-light border-warning cstmbtn" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <footer class="bg-dark text-white text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <form action="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-auto mb-4 mb-md-0">
+                        <p class="pt-2"><strong>Sign up for our newsletter, special offers, and more</strong></p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-5 col-12 mb-4 mb-md-0">
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <input type="email" id="form5Example2" placeholder="Enter your email address"
+                                class="form-control" />
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-auto mb-4 mb-md-0">
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-warning mb-4">Sign up</button>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </form>
+        </div>
+        <!-- Grid container -->
+    </footer>
+    <h1 style="text-align: center; font-weight: bold; margin-top: 50px; font-size: 45px;">CONTACT</h1>
+    <br>
+    <br>
+    <br>
+    <div class="row row-cols-1 row-cols-md-3 g-3 w-100 text-center cstmdiv">
+        <div class="col">
+            <div class="card h-100 w-75 cstmcard">
+                <img src="images/contact.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Contact Us</h5>
+                    <p class="card-text">You can get in touch with us over the phone or by email.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-info" style="cursor: pointer;">Find out more..</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100  w-75 cstmcard">
+                <img src="images/Travel.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Travel shops</h5>
+                    <p class="card-text">Find the travel shop nearest to you.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-info" style="cursor: pointer;">Find out more..</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100  s cstmcard">
+                <img src="images/operation.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Operational Updates</h5>
+                    <p class="card-text">Stay up to date with our operational updates and important notices.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-info" style="cursor: pointer;">Find out more..</small>
+                </div>
+            </div>
+        </div>
+        <div class="col" style="padding-top: 23px;">
+            <div class="card h-100  w-75 cstmcard">
+                <img src="images/faq.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Frequently asked questions (FAQs)</h5>
+                    <p class="card-text">Need information or help with your booking? You'll find the answers here.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-info" style="cursor: pointer;">Find out more..</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <footer class="bg-dark text-white text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-5">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                    <img src="images/logo.png" width="130px" height="100px"
+                        style="margin-top: -28px; margin-left: 21px;">
+                    <ul class=" mb-0 flist">
+                        <li>Policies</li>
+                        <li>Terms & Conditions</li>
+                        <li>+92313-8554924</li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <ul class=" mb-0 flist">
+                        <li>About BonVoyage</li>
+                        <li>News</li>
+                        <li>Travel shops</li>
+                        <li>Cargo</li>
+                        <li>Ethical Reporting</li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <ul class=" flist">
+                        <li>Careers</li>
+                        <li>FAQs</li>
+                        <li>Procurement</li>
+                        <li>In-flight advertising</li>
+                        <li>Travel agents</li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <ul class=" mb-0 flist">
+                        <li>Lowest fares</li>
+                        <li>Car rental</li>
+                        <li>Hotels</li>
+                        <li>Holidays</li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: goldenrod; color: black;">
+            © 2020 All rights reserved:
+            <a href="index.html" style="color: black;">BonVtravels.online</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <a href="#" class="up"><img src="images/up.svg" alt="" width="40px" height="40px"></a>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
