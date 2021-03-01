@@ -1,0 +1,211 @@
+body {
+    background-color: #004B93;
+    min-height: 95vh;
+}
+
+div.input_div{
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 50%;
+}
+
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 3.5em;
+    color: antiquewhite;
+    word-spacing: 8px;
+    letter-spacing: -6px;
+    font-style: italic;
+    border: 3px solid white;
+    box-shadow: 0 5px 30px black;
+    width: 50%;
+    margin: 20px auto;
+}
+
+div.input_div2{
+    position: relative;
+    display: inline-block;
+    width: 65%;
+}
+
+.inp {
+    padding: 12px;
+    font-size: 1em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    width: 90%;
+    border: none;
+    background-color: #004B93; 
+}
+
+span {
+    position: absolute;
+    left: 25%;
+    content: '';
+    height: 40px;
+    height: 3px;
+    background: white;
+    transition: all 0.3s linear;
+    width: 0;
+    bottom: -5px;  
+}
+
+.inp:hover ~ span {
+    width: 420px;
+    margin-left: -105px;
+}
+
+.inp:focus ~ span {
+    width: 420px;
+    margin-left: -105px;
+}
+
+.inp::placeholder{
+    color: white;
+}
+
+.btn {
+    padding: 10px;
+    margin: 15px;
+    font-size: 1.5em;
+    width: 10%;
+    border: none;
+    border-radius: 10px;
+    background-color: #004B93;
+    color: white;
+    cursor: pointer;
+}
+
+#addbtn:hover{
+    transition-duration: .4s;
+    background-color: green;
+    color: black;
+}
+
+#dltbtn:hover{
+    transition-duration: .4s;
+    background-color: #C9002B;
+    color: black;
+}
+
+.bottom{
+    width: 50%;
+    margin: 15px auto;
+    border: 3px solid white;
+    background-color: #005CB4;
+    box-shadow: 0 10px 33px black;
+}
+
+.list {
+    padding: 12px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    margin: 12px 0;
+    margin-left: 50px;
+    width: 80%;
+    box-shadow: inset 5px 8px 12px grey;
+}
+
+.btn2_div{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.editbtn, .dltbtn{
+    width: 50px;
+    height: 30px;
+    font-size: 0.8em;
+    border: none;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.editbtn:hover{
+    color: green;
+}
+
+.dltbtn:hover{
+    color: #C9002B;
+}
+
+
+@media (max-width: 800px){
+    h1{
+        font-size: 1.8em;
+        letter-spacing: -3px;
+        border: 2px solid white;
+        box-shadow: 0 5px 25px black;
+        width: 90%;
+    }
+    
+    div.input_div2{
+        position: relative;
+        display: inline;
+        width: 100%;
+    }
+    
+    .inp {
+        padding: 10px;
+        font-size: 0.8em;
+        width: 100%;
+        margin-left: -80px;
+    }
+    
+    span {
+        left: 15%;
+        height: 2px;
+    }
+    
+    .inp:hover ~ span {
+        width: 200px;
+    }
+    
+    .inp:focus ~ span {
+        width: 200px;
+    }
+    
+    .btn {
+        padding: 5px;
+        margin: 12px;
+        font-size: 0.9em;
+        width: 15%;
+        border-radius: 5px;
+    }
+
+    #dltbtn{
+        position: relative;
+        left: 180px;
+        top: -50px;
+    }
+    
+    .bottom{
+        width: 80%;
+        margin: 0 auto;
+        border: 2px solid white;
+    }
+    
+    .list {
+        padding: 8px;
+        font-size: 15px;
+        border-radius: 10px;
+        margin: 6px 0;
+        margin-left: 25px;
+        width: 75%;
+    }
+    
+    .btn2_div{
+        width: 45%;
+    }
+    
+    .editbtn, .dltbtn{
+        width: 70px;
+        height: 15px;
+        font-size: 0.85em;
+    }
+}

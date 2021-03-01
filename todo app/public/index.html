@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDailyPlanner</title>
+    <link rel="shortcut icon" href="stream-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCYGSQrXiJlysQwyyMWimZ4_bv1ht2SS-Y",
+            authDomain: "mydailyplanner-afe12.firebaseapp.com",
+            projectId: "mydailyplanner-afe12",
+            storageBucket: "mydailyplanner-afe12.appspot.com",
+            messagingSenderId: "1592144251",
+            appId: "1:1592144251:web:13b460603307c697e5cdde"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="https://kit.fontawesome.com/76f0b3d2b7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>MY DAILY PLANNER <i class="fas fa-stream"></i></h1>
+
+    <div class="input_div">
+        <div class="input_div2">
+            <input placeholder="Enter What you want Todo..." type="text" class="inp" id="inp"><span></span>
+        </div>
+        <button class="btn" id="addbtn" onclick="add()">
+            <i class="fas fa-plus-circle"></i>
+        </button>
+        <button class="btn" id="dltbtn" onclick="deleteAll()">
+            <i class="fas fa-trash-alt"></i>
+        </button>
+    </div>
+
+    <div class="bottom">
+        <div id="mainList"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
