@@ -1,0 +1,104 @@
+[debug] [2021-02-28T10:33:27.491Z] ----------------------------------------------------------------------
+[debug] [2021-02-28T10:33:27.496Z] Command:       E:\Programs\node.exe C:\Users\MAVERICK\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-02-28T10:33:27.496Z] CLI Version:   8.18.1
+[debug] [2021-02-28T10:33:27.496Z] Platform:      win32
+[debug] [2021-02-28T10:33:27.496Z] Node Version:  v12.16.2
+[debug] [2021-02-28T10:33:27.498Z] Time:          Sun Feb 28 2021 15:33:27 GMT+0500 (Pakistan Standard Time)
+[debug] [2021-02-28T10:33:27.498Z] ----------------------------------------------------------------------
+[debug] [2021-02-28T10:33:27.498Z] 
+[debug] [2021-02-28T10:33:27.512Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-28T10:33:27.513Z] > authorizing via signed-in user
+[debug] [2021-02-28T10:33:27.514Z] [iam] checking project quizpedia-af89f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-02-28T10:33:27.520Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/quizpedia-af89f:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-02-28T10:33:29.124Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Mar 2021 12:29:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1212","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-28T10:33:29.128Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/quizpedia-af89f  
+ 
+[debug] [2021-02-28T10:33:29.846Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Mar 2021 12:29:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'quizpedia-af89f'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-02-28T10:33:29.865Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/quizpedia-af89f/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-02-28T10:33:32.334Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Mar 2021 12:29:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[quizpedia-af89f]: beginning deploy... 
+[info] i  hosting[quizpedia-af89f]: found 5 files in public 
+[debug] [2021-02-28T10:33:32.351Z] [hosting] hash cache [cHVibGlj] not populated
+[debug] [2021-02-28T10:33:32.385Z] > refreshing access token with scopes: []
+[debug] [2021-02-28T10:33:32.385Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-28T10:33:32.453Z] [hosting] hash cache [cHVibGlj] stored for 5 files
+[debug] [2021-02-28T10:33:32.453Z] [hosting][hash queue][FINAL] {"max":26,"min":10,"avg":14.8,"active":0,"complete":5,"success":5,"errored":0,"retried":0,"total":5,"elapsed":101}
+[debug] [2021-02-28T10:33:32.798Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 01 Mar 2021 12:29:14 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-28T10:33:32.885Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/quizpedia-af89f/versions/f14c1bc82d6daf84:populateFiles [none]
+[debug] [2021-02-28T10:33:32.886Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/quizpedia-af89f/versions/f14c1bc82d6daf84:populateFiles {"files":{"/app.js":"02a361a4ad6a77904762df4ada921a0f002bd75f066022197f122dc3fea15de9","/index.html":"7bb721c15e6c0ce76036e9825146fb64bccc62afe3724e47961cb701c00cd4be","/style.css":"f73955de340479c849bc5ccf55d3a6da0af18f375faa7251a72ce305b6c9db6a","/images/cancel.png":"6b57e389308ae5cf61d4c636b8e76ae701edc41f3cc2cac1bd05a5a495e95a94","/images/check.png":"270214945ba4b03270865f188cb1c998ad5dfcbd2183d838e3dba23da9a2964a"}}
+[debug] [2021-02-28T10:33:34.825Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/quizpedia-af89f/versions/f14c1bc82d6daf84:populateFiles 200
+[debug] [2021-02-28T10:33:34.826Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/quizpedia-af89f/versions/f14c1bc82d6daf84:populateFiles {"uploadRequiredHashes":["270214945ba4b03270865f188cb1c998ad5dfcbd2183d838e3dba23da9a2964a","02a361a4ad6a77904762df4ada921a0f002bd75f066022197f122dc3fea15de9","7bb721c15e6c0ce76036e9825146fb64bccc62afe3724e47961cb701c00cd4be","f73955de340479c849bc5ccf55d3a6da0af18f375faa7251a72ce305b6c9db6a","6b57e389308ae5cf61d4c636b8e76ae701edc41f3cc2cac1bd05a5a495e95a94"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files"}
+[debug] [2021-02-28T10:33:34.829Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/270214945ba4b03270865f188cb1c998ad5dfcbd2183d838e3dba23da9a2964a [none]
+[debug] [2021-02-28T10:33:34.829Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/270214945ba4b03270865f188cb1c998ad5dfcbd2183d838e3dba23da9a2964a [stream]
+[debug] [2021-02-28T10:33:34.831Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/02a361a4ad6a77904762df4ada921a0f002bd75f066022197f122dc3fea15de9 [none]
+[debug] [2021-02-28T10:33:34.832Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/02a361a4ad6a77904762df4ada921a0f002bd75f066022197f122dc3fea15de9 [stream]
+[debug] [2021-02-28T10:33:34.833Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/7bb721c15e6c0ce76036e9825146fb64bccc62afe3724e47961cb701c00cd4be [none]
+[debug] [2021-02-28T10:33:34.833Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/7bb721c15e6c0ce76036e9825146fb64bccc62afe3724e47961cb701c00cd4be [stream]
+[debug] [2021-02-28T10:33:34.835Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/f73955de340479c849bc5ccf55d3a6da0af18f375faa7251a72ce305b6c9db6a [none]
+[debug] [2021-02-28T10:33:34.835Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/f73955de340479c849bc5ccf55d3a6da0af18f375faa7251a72ce305b6c9db6a [stream]
+[debug] [2021-02-28T10:33:34.836Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/6b57e389308ae5cf61d4c636b8e76ae701edc41f3cc2cac1bd05a5a495e95a94 [none]
+[debug] [2021-02-28T10:33:34.836Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/6b57e389308ae5cf61d4c636b8e76ae701edc41f3cc2cac1bd05a5a495e95a94 [stream]
+[debug] [2021-02-28T10:33:34.837Z] [hosting][populate queue][FINAL] {"max":2446,"min":2446,"avg":2446,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2454}
+[debug] [2021-02-28T10:33:34.838Z] [hosting] uploads queued: 5
+[debug] [2021-02-28T10:33:36.576Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/7bb721c15e6c0ce76036e9825146fb64bccc62afe3724e47961cb701c00cd4be 200
+[debug] [2021-02-28T10:33:36.577Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/7bb721c15e6c0ce76036e9825146fb64bccc62afe3724e47961cb701c00cd4be [stream]
+[debug] [2021-02-28T10:33:36.588Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/02a361a4ad6a77904762df4ada921a0f002bd75f066022197f122dc3fea15de9 200
+[debug] [2021-02-28T10:33:36.588Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/02a361a4ad6a77904762df4ada921a0f002bd75f066022197f122dc3fea15de9 [stream]
+[debug] [2021-02-28T10:33:36.591Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/f73955de340479c849bc5ccf55d3a6da0af18f375faa7251a72ce305b6c9db6a 200
+[debug] [2021-02-28T10:33:36.591Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/f73955de340479c849bc5ccf55d3a6da0af18f375faa7251a72ce305b6c9db6a [stream]
+[debug] [2021-02-28T10:33:36.704Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/270214945ba4b03270865f188cb1c998ad5dfcbd2183d838e3dba23da9a2964a 200
+[debug] [2021-02-28T10:33:36.704Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/270214945ba4b03270865f188cb1c998ad5dfcbd2183d838e3dba23da9a2964a [stream]
+[debug] [2021-02-28T10:33:36.852Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/6b57e389308ae5cf61d4c636b8e76ae701edc41f3cc2cac1bd05a5a495e95a94 200
+[debug] [2021-02-28T10:33:36.852Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/quizpedia-af89f/versions/f14c1bc82d6daf84/files/6b57e389308ae5cf61d4c636b8e76ae701edc41f3cc2cac1bd05a5a495e95a94 [stream]
+[debug] [2021-02-28T10:33:36.853Z] [hosting][upload queue][FINAL] {"max":2025,"min":1749,"avg":1835.4,"active":0,"complete":5,"success":5,"errored":0,"retried":0,"total":5,"elapsed":2027}
+[info] +  hosting[quizpedia-af89f]: file upload complete 
+[debug] [2021-02-28T10:33:36.854Z] [hosting] deploy completed after 4518ms
+[debug] [2021-02-28T10:33:37.141Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "quizpedia-af89f"
+    },
+    "site": "quizpedia-af89f",
+    "version": "sites/quizpedia-af89f/versions/f14c1bc82d6daf84"
+  }
+]
+[info] i  hosting[quizpedia-af89f]: finalizing version... 
+[debug] [2021-02-28T10:33:37.145Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-28T10:33:37.145Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-28T10:33:37.474Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 01 Mar 2021 12:29:18 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-28T10:33:37.501Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/quizpedia-af89f/versions/f14c1bc82d6daf84?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2021-02-28T10:33:39.227Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Mar 2021 12:29:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-28T10:33:39.228Z] [hosting] finalized version for quizpedia-af89f: {"name":"sites/quizpedia-af89f/versions/f14c1bc82d6daf84","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-03-01T12:29:12.979974Z","createUser":{"email":"sohaibfarooq51@gmail.com"},"finalizeTime":"2021-03-01T12:29:20.564085Z","finalizeUser":{"email":"sohaibfarooq51@gmail.com"}}
+[info] +  hosting[quizpedia-af89f]: version finalized 
+[info] i  hosting[quizpedia-af89f]: releasing new version... 
+[debug] [2021-02-28T10:33:39.234Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/quizpedia-af89f/releases?version_name=sites/quizpedia-af89f/versions/f14c1bc82d6daf84  
+ {"message":null}
+[debug] [2021-02-28T10:33:40.896Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Mar 2021 12:29:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-28T10:33:40.896Z] [hosting] release: {"name":"sites/quizpedia-af89f/releases/1614601761540320","version":{"name":"sites/quizpedia-af89f/versions/f14c1bc82d6daf84","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-03-01T12:29:12.979974Z","createUser":{"email":"sohaibfarooq51@gmail.com"},"finalizeTime":"2021-03-01T12:29:20.564085Z","finalizeUser":{"email":"sohaibfarooq51@gmail.com"},"preview":{}},"type":"DEPLOY","releaseTime":"2021-03-01T12:29:21.540320943Z","releaseUser":{"email":"sohaibfarooq51@gmail.com"}}
+[info] +  hosting[quizpedia-af89f]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/quizpedia-af89f/overview
+[info] Hosting URL: https://quizpedia-af89f.web.app

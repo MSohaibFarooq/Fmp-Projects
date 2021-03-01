@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizPedia</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyD-XSsKwz_Wqju_3x_9wJF6yMf22Q0N_8g",
+            authDomain: "quizpedia-af89f.firebaseapp.com",
+            databaseURL: "https://quizpedia-af89f-default-rtdb.firebaseio.com",
+            projectId: "quizpedia-af89f",
+            storageBucket: "quizpedia-af89f.appspot.com",
+            messagingSenderId: "930663359789",
+            appId: "1:930663359789:web:c532ed3c7837c59900dfa4"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <h1 id="title"><i class="fas fa-brain"></i> QuizPedia</h1>
+        <div id="loaderDiv">
+            <div id="loader" class="spinner-border"></div>
+        </div>
+        <!-- ==================Home Page================ -->
+        <button class="btn startBtn" id="startBtn" onclick="startQuiz()">Start Quiz</button>
+
+        <!-- ==================Quiz Body================ -->
+        <div id="mainBody" style="display: none;">
+            <button class="btn btn-danger exitBtn" id="exitBtn" onclick="appendResult()">Finish Quiz</button>
+            <div id="quiz">
+                <div id="quizHeader"></div>
+                <div id="quizBody"></div>
+            </div>
+        </div>
+        <script defer src="app.js"></script>
+
+</body>
+
+</html>
